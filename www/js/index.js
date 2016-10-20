@@ -11,6 +11,9 @@ var launched_count = 0;
         //window.localStorage.setItem("pen","black");
         //window.localStorage.setItem("notebook","large");
         //window.localStorage.setItem("watch","silver");
+        //  var key = "pen";
+        //  var value = window.localStorage.getItem(key);
+        //  alert(window.localStorage.length);
     var information =
      {
          "firstName":"Yvonne",
@@ -27,12 +30,7 @@ var launched_count = 0;
     
     var getInformation = window.localStorage.getItem("YiyunZhu");
         var informationJSON = JSON.parse(getInformation);
-        alert(informationJSON);
-
-        
-      //  var key = "pen";
-      //  var value = window.localStorage.getItem(key);
-      //  alert(window.localStorage.length);
+        alert(information.address.city);
     }
 	
 	function updateDisplay() {
