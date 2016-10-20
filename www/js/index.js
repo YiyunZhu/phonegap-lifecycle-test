@@ -5,6 +5,9 @@ var launched_count = 0;
     function onLoad() {
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
+        
+        $('#button1').click(myFunction);
+        
     }
 	
 	function updateDisplay() {
@@ -42,7 +45,8 @@ var launched_count = 0;
     
     function myFunction(){
         window.localStorage.setItem("pen","black");
-        window.localStorage.getItem("pen");
+        alert(window.localStorage.getItem("pen"));
+        
 
     }
 
