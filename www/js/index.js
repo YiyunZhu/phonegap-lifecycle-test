@@ -7,23 +7,18 @@ var launched_count = 0;
 		console.log("device ready");
         
    //     $('#button1').click(myFunction);
-        
-    }
-	
-	function updateDisplay() {
-		$("#launched").text("Application launched: " + launched_count);
-		$("#resumed").text("Application paused: " + paused_count);
-		$("#paused").text("Application resumed: " + resumed_count);
-        
         window.localStorage.setItem("pen","black");
         window.localStorage.setItem("notebook","large");
         
       //  var key = "pen";
       //  var value = window.localStorage.getItem(key);
         alert(window.localStorage.length);
-            
-        
-        
+    }
+	
+	function updateDisplay() {
+		$("#launched").text("Application launched: " + launched_count);
+		$("#resumed").text("Application paused: " + paused_count);
+		$("#paused").text("Application resumed: " + resumed_count);        
 	}
 
 
