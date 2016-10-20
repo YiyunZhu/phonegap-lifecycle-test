@@ -18,9 +18,9 @@ var launched_count = 0;
         window.localStorage.setItem("pen","black");
         window.localStorage.setItem("notebook","large");
         
-        var key = "pen";
-       var value = window.localStorage.getItem(key);
-        alert(value);
+      //  var key = "pen";
+      //  var value = window.localStorage.getItem(key);
+        alert(window.localStorage.length);
             
         
         
