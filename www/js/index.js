@@ -11,6 +11,7 @@ var launched_count = 0;
 		$("#launched").text("Application launched: " + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
 		$("#paused").text("Application resumed: " + resumed_count);
+        $("#count").text("The items stored: "+ count);
 	}
 
 
@@ -39,3 +40,13 @@ var launched_count = 0;
 		resumed_count++;
 		updateDisplay();
     }
+    
+    function myFunction(){
+        var key = "pen";
+        var value = "black";
+        window.localStorage.setItem(key,value);
+        window.localStorage.getItem(key);
+        count++;
+        updateDisplay();
+    }
+
