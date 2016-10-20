@@ -42,11 +42,9 @@ var launched_count = 0;
     }
     
     function myFunction(){
-        var key = "pen";
-        var value = "black";
-        window.localStorage.setItem(key,value);
+        window.localStorage.setItem("pen","black");
+        var key="pen";
         window.localStorage.getItem(key);
-        count++;
-        updateDisplay();
+        alert(value);
     }
 
