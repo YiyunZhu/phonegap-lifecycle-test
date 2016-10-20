@@ -9,6 +9,7 @@ var launched_count = 0;
    //     $('#button1').click(myFunction);
         window.localStorage.setItem("pen","black");
         window.localStorage.setItem("notebook","large");
+        window.localStorage.setItem("watch","silver");
         
       //  var key = "pen";
       //  var value = window.localStorage.getItem(key);
