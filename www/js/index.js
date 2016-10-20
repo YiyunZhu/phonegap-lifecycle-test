@@ -45,6 +45,7 @@ var launched_count = 0;
         window.localStorage.setItem("pen","black");
         var key="pen";
         window.localStorage.getItem(key);
-        alert(value);
+        count++;
+        updateDisplay();
     }
 
