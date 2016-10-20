@@ -16,10 +16,13 @@ var launched_count = 0;
 		$("#paused").text("Application resumed: " + resumed_count);
         
         window.localStorage.setItem("pen","black");
+        window.localStorage.setItem("notebook","large");
         
         var key = "pen";
-        var value = window.localStorage.getItem(key);
+       var value = window.localStorage.getItem(key);
         alert(value);
+            
+        
         
 	}
 
@@ -52,7 +55,6 @@ var launched_count = 0;
     
   //  function myFunction(){
   //      window.localStorage.setItem("pen","black");
- //       window.localStorage.setItem("notebook","");
   //      alert(window.localStorage.getItem("pen"));
         
  //   }
