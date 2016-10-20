@@ -30,7 +30,7 @@ var launched_count = 0;
     
     var getInformation = window.localStorage.getItem("YiyunZhu");
         var informationJSON = JSON.parse(getInformation);
-        alert(informationJSON);
+        alert(informationJSON.firstName);
         
     }
 	
