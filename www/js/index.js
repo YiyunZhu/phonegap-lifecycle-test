@@ -6,7 +6,7 @@ var launched_count = 0;
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
         
-        $('#button1').click(myFunction);
+   //     $('#button1').click(myFunction);
         
     }
 	
@@ -14,6 +14,13 @@ var launched_count = 0;
 		$("#launched").text("Application launched: " + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
 		$("#paused").text("Application resumed: " + resumed_count);
+        
+        window.localStorage.setItem("pen","black");
+        
+        var key = "pen";
+        var value = window.localStorage.getItem(key);
+        alert(value);
+        
 	}
 
 
@@ -43,10 +50,10 @@ var launched_count = 0;
 		updateDisplay();
     }
     
-    function myFunction(){
-        window.localStorage.setItem("pen","black");
-        alert(window.localStorage.getItem("pen"));
+  //  function myFunction(){
+  //      window.localStorage.setItem("pen","black");
+ //       window.localStorage.setItem("notebook","");
+  //      alert(window.localStorage.getItem("pen"));
         
-
-    }
+ //   }
 
