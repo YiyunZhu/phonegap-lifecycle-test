@@ -22,13 +22,17 @@ var launched_count = 0;
              
      }
      
-     console.log(
-         information.firstName + " is from " + information.address.HallsName
-     );
+    var informationString = JSON.stringify(information);
+        window.localStorage.setItem("YiyunZhu",informationString);
+    
+    var getInformation = window.localStorage.getItem("YiyunZhu");
+        var informationJSON = JSON.parse(getInformation);
+        alert(informationJSON);
+
         
       //  var key = "pen";
       //  var value = window.localStorage.getItem(key);
-        alert(window.localStorage.length);
+      //  alert(window.localStorage.length);
     }
 	
 	function updateDisplay() {
