@@ -8,9 +8,23 @@ var launched_count = 0;
         
    //     $('#button1').click(myFunction);
         window.localStorage.clear();
-        window.localStorage.setItem("pen","black");
-        window.localStorage.setItem("notebook","large");
-        window.localStorage.setItem("watch","silver");
+        //window.localStorage.setItem("pen","black");
+        //window.localStorage.setItem("notebook","large");
+        //window.localStorage.setItem("watch","silver");
+    var information =
+     {
+         "firstName":"Yvonne",
+             "lastName":"Zhu",
+                 "address":{
+                     "HallsName":"Malvern",
+                         "city":"Worcester",
+                 }
+             
+     }
+     
+     console.log(
+         information.firstName + " is from " + information.address.HallsName
+     );
         
       //  var key = "pen";
       //  var value = window.localStorage.getItem(key);
@@ -55,5 +69,5 @@ var launched_count = 0;
   //      window.localStorage.setItem("pen","black");
   //      alert(window.localStorage.getItem("pen"));
         
- //   }
+  //   }
 
